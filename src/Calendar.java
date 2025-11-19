@@ -9,4 +9,21 @@ public class Calendar {
         this.size = 0;
     }
 
+
+    public void addEvent(Event event){
+        if(this.size == this.calendar.length){
+            resize();
+        }
+        this.calendar[this.size] = event;
+        this.size++;
+    }
+
+    private void resize(){
+        Event[] temp = new Event[this.calendar.length*2];
+        for(int i = 0; i<this.calendar.length; i++){
+            temp[i] = this.calendar[i];
+        }
+        this.calendar = temp;
+    }
+
 }
