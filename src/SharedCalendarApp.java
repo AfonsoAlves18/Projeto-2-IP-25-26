@@ -2,10 +2,15 @@ public class SharedCalendarApp {
 
     User[] users;
     Event[] events;
-    int index;
+    private static final int DEFAULT_CAPACITY = 100;
+    int numOfUsers;
+    int numOfEvents;
 
     public SharedCalendarApp(){
-        this.index = 0;
+        this.users = new User[DEFAULT_CAPACITY];
+        this.events = new Event[DEFAULT_CAPACITY];
+        this.numOfUsers = 0;
+        this.numOfEvents = 0;
     }
 
     private User getUser(String userName ){
@@ -27,8 +32,11 @@ public class SharedCalendarApp {
     }
 
     public void addUser(String name){
-        users[index]= new User(name);
-        index++;
+        if(isUsersFull())
+            resize();
+
+        users[numOfUsers]= new User(name);
+        numOfUsers++;
     }
 
     public boolean doesUserExist(String name){
@@ -39,22 +47,32 @@ public class SharedCalendarApp {
         return getEvent(name) != null;
     }
 
-    public void addEvent(String name, int day, int startHour, int endHour, int numOfParticipants, String proposer){
-
-    }
-
-    public void initUsersArray(int numberUsers){
-        this.users = new User[numberUsers];
-    }
-
-    public void initEventsArray(int numberEvents){
-        this.events = new Event[numberEvents];
+    public void addEvent(String eventName ,int day, int startHour, int endHour, int numOfParticipants, String proposer){
+        Event event = new Event(eventName,day,startHour,endHour,numOfParticipants,proposer);
+        events[numOfEvents] = event;
+        numOfEvents++;
     }
 
     public void addEventToUser(String userName, String eventName){
         User user = getUser(userName);
         Event event =
         user.addEventToCalendar();
+    }
+
+    private boolean isUsersFull(){
+        return numOfUsers == users.length;
+    }
+
+    private boolean isEventsFull(){
+        return numOfEvents == events.length;
+    }
+
+    private void resize(){
+        User[] temp = new User[users.length*2];
+        for(int i = 0; i<users.length; i++){
+            temp[i] = users[i];
+        }
+        this.users = temp;
     }
 
 

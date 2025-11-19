@@ -11,9 +11,10 @@ public class Calendar {
 
 
     public void addEvent(Event event){
-        if(this.size == this.calendar.length){
+        if(isFull())
             resize();
-        }
+
+
         this.calendar[this.size] = event;
         this.size++;
     }
@@ -24,6 +25,10 @@ public class Calendar {
             temp[i] = this.calendar[i];
         }
         this.calendar = temp;
+    }
+
+    private boolean isFull(){
+        return this.size == this.calendar.length;
     }
 
 }

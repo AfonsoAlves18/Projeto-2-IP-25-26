@@ -52,7 +52,9 @@ public class Main {
                 case TOP -> handleTop(app);
                 default -> System.out.println(INVALID_COMMAND);
             }
-        }while (command != EXIT);
+            command = input.next().trim();
+
+        }while (!command.equals(EXIT));
 
         System.out.println(APP_EXITED);
     }
@@ -63,31 +65,12 @@ public class Main {
     private static void initialize(Scanner in, SharedCalendarApp app){
         int numberOfUsers = in.nextInt();
         in.nextLine();
-        app.initUsersArray(numberOfUsers);
-
         for(int i=0; i<numberOfUsers; i++){
-            String name = in.nextLine();
-            app.addUser(name);
+            handleCreate(in,app);
         }
-        initializeEvents(in,app);
-
-
-    }
-
-    private static void initializeEvents(Scanner in,SharedCalendarApp app){
         int numberOfEvents = in.nextInt();
-        app.initEventsArray(numberOfEvents);
-        in.nextLine();
-        for(int i = 0; i < numberOfEvents; i++){
-            String name = in.next();
-            int day = in.nextInt();
-            int startHour = in.nextInt();
-            int endHour = in.nextInt();
-            in.nextLine();
-            int numOfParticipants = in.nextInt();
-            in.nextLine();
-            String proposer = in.next();
-            app.addEvent(name, day, startHour, endHour, numOfParticipants, proposer);
+        for(int i=0; i<numberOfEvents; i++){
+            handleSchedule(in,app);
         }
     }
 
@@ -109,31 +92,44 @@ public class Main {
         in.nextLine();
         int numOfParticipants = in.nextInt();
         in.nextLine();
-        String proposer = in.next();
-        app.addEvent(eventName, day, startHour, endHour, numOfParticipants, proposer);
+        String proposer = in.next().trim();
 
         String[] participants = new String[numOfParticipants];
-        for(int i = 0; i<numOfParticipants; i++){
+        boolean canAdd = true;
+
+        for(int i=0; i<numOfParticipants; i++){
             participants[i] = in.next().trim();
+            if(!app.doesUserExist(participants[i])){
+                System.out.println(NOT_REGISTERED);
+                canAdd = false;
+            }
         }
 
-        boolean isRegistered = true;
+        if(canAdd && app.doesEventExist(eventName)){
+            System.out.println(EVENT_ALREADY_EXISTS);
+            canAdd = false;
+        }
 
-        while(isRegistered) {
-            for (int i = 0; i < numOfParticipants; i++) {
-                if (!app.doesUserExist(participants[i])) {
-                    System.out.println(NOT_REGISTERED);
-                    isRegistered = false;
+        if(canAdd && !app.isUserAvailable(proposer)){
+            System.out.println(PROPOSER_NOT_AVAILABLE);
+            canAdd = false;
+        }
+
+        if(canAdd){
+            boolean userUnavailable = false;
+            for(int i=0; i<numOfParticipants; i++){
+                if(!app.isUserAvailable(participants[i])){
+                    if(!userUnavailable){
+                        System.out.println(USER_NOT_AVAILABLE);
+                        userUnavailable = true;
+                    }
+                    canAdd = false;
                 }
             }
         }
 
-        if(app.doesEventExist(eventName)){
-            System.out.println(EVENT_ALREADY_EXISTS);
-        } else if (!app.isProposerAvailable()) {
-            System.out.println(PROPOSER_NOT_AVAILABLE);
-        }else{
-            System.out.println(USER_NOT_AVAILABLE);
+        if(canAdd){
+            app.addEvent(eventName, day, startHour, endHour, numOfParticipants, proposer);
         }
     }
 
