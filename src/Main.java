@@ -3,6 +3,9 @@ import java.util.Scanner;
 
 
 public class Main {
+
+    private static final String NOT_REGISTERED = "Some user not registered.";
+
     public static void main(String[] args) throws FileNotFoundException{
 
         Scanner input = new Scanner(System.in);
@@ -31,6 +34,8 @@ public class Main {
             app.addUser(name);
         }
         initializeEvents(in,app);
+
+
     }
 
     private static void initializeEvents(Scanner in,SharedCalendarApp app){

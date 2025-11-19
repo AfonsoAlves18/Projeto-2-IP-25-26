@@ -36,7 +36,9 @@ public class SharedCalendarApp {
     }
 
     public void addEventToUser(String userName, String eventName){
-
+        User user = getUser(userName);
+        Event event =
+        user.addEventToCalendar();
     }
 
 
