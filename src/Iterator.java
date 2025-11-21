@@ -1,6 +1,16 @@
 public class Iterator {
 
-    public Iterator(){
+    Event[] events;
+    int max;
+    int index;
 
+    public Iterator(Event[] events, int max){
+        this.events = events;
+        this.index = 0;
+        this.max = max;
+    }
+
+    public boolean hasNext() {
+        return index < max;
     }
 }
