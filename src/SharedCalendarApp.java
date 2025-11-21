@@ -13,8 +13,8 @@ public class SharedCalendarApp {
         this.numOfEvents = 0;
     }
 
-    private User getUser(String userName ){
-        for(int i = 0; i<users.length; i++){
+    private User getUser(String userName ) {
+        for(int i = 0; i<numOfUsers; i++){
             if(userName.equals(users[i].getName())){
                 return users[i];
             }
@@ -23,7 +23,7 @@ public class SharedCalendarApp {
     }
 
     private Event getEvent(String eventName ){
-        for(int i = 0; i<events.length; i++){
+        for(int i = 0; i<numOfEvents; i++){
             if(eventName.equals(events[i].getName())){
                 return events[i];
             }
@@ -51,12 +51,13 @@ public class SharedCalendarApp {
         Event event = new Event(eventName,day,startHour,endHour,numOfParticipants,proposer);
         events[numOfEvents] = event;
         numOfEvents++;
+
     }
 
-    public void addEventToUser(String userName, String eventName){
+    public void registerEventToUsers(String eventName, String userName){
+        Event event = getEvent(eventName);
         User user = getUser(userName);
-        Event event =
-        user.addEventToCalendar();
+        user.addEvent(event);
     }
 
     private boolean isUsersFull(){
@@ -75,5 +76,97 @@ public class SharedCalendarApp {
         this.users = temp;
     }
 
+
+    public boolean isUserAvailable(String participant, int day, int startHour, int endHour){
+        User user = getUser(participant);
+        return user.isFree(day, startHour, endHour);
+    }
+
+    public boolean isEventOnCalendar(String eventName, String userName) {
+        User user = getUser(userName);
+        return user.hasEvent(eventName);
+    }
+
+    public boolean isUserProposer(String userName, String eventName) {
+        Event event = getEvent(eventName);
+        return event.getProposer().equals(userName);
+    }
+
+    public void cancelEvent(String eventName) {
+        for(int i=0; i<numOfUsers; i++){
+            User user = users[i];
+            if(user.hasEvent(eventName)){
+                user.cancelEvent(eventName);
+                removeEvent(eventName);
+            }
+        }
+    }
+
+    public boolean isCalendarEmpty(String userName) {
+        User user = getUser(userName);
+        return user.isCalendarEmpty();
+    }
+
+
+    private void removeEvent(String eventName) {
+        for(int i = 0; i < numOfEvents; i++){
+            if(events[i].getName().equals(eventName)){
+                for(int j = i; j < numOfEvents - 1; j++){
+                    events[j] = events[j + 1];
+                }
+                events[numOfEvents - 1] = null;
+                numOfEvents--;
+                return;
+            }
+        }
+    }
+
+    public boolean isEventCalendarEmpty() {
+        return numOfEvents == 0;
+    }
+
+    public Iterator getTopEventsIterator() {
+        sortEvents();
+        return new Iterator(events, numOfEvents);
+
+    }
+
+    public Iterator getShowEventsIterator(String userName) {
+        User user = getUser(userName);
+        return user.getSortedIterator();
+    }
+
+    private void sortEvents(){
+        Event[] sortedEvents = new Event[numOfEvents];
+        for (int i = 0; i < numOfEvents; i++) {
+            sortedEvents[i] = this.events[i];
+        }
+        for(int i = 0; i < numOfEvents - 1; i++){
+            for(int j = i + 1; j < numOfEvents; j++){
+                boolean needsSwapping = needsSwap(sortedEvents, j, i);
+
+                if (needsSwapping) {
+                    Event temp = sortedEvents[i];
+                    sortedEvents[i] = sortedEvents[j];
+                    sortedEvents[j] = temp;
+                }
+            }
+        }
+    }
+
+    private static boolean needsSwap(Event[] sortedEvents, int j, int i) {
+        boolean needsSwapping = false;
+
+        if (sortedEvents[j].getDay() < sortedEvents[i].getDay()) {
+            needsSwapping = true;
+        } else if (sortedEvents[j].getDay() == sortedEvents[i].getDay()
+                && sortedEvents[j].getStartHour() < sortedEvents[i].getStartHour()) {
+            needsSwapping = true;
+        }else if (sortedEvents[j].getStartHour() == sortedEvents[i].getStartHour()
+                && sortedEvents[j].getName().compareTo(sortedEvents[i].getName()) < 0) {
+            needsSwapping = true;
+        }
+        return needsSwapping;
+    }
 
 }

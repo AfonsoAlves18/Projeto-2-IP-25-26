@@ -13,4 +13,10 @@ public class Iterator {
     public boolean hasNext() {
         return index < max;
     }
+
+    public Event next(){
+        Event e = events[index];
+        index++;
+        return e;
+    }
 }

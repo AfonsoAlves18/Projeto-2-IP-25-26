@@ -28,7 +28,7 @@ public class Main {
        // Scanner in = new Scanner(reader);
 
         SharedCalendarApp app = new SharedCalendarApp();
-        initialize(in, app);
+        //initialize(in, app);
 
         handleInput(input, app);
         //in.close();
@@ -73,6 +73,7 @@ public class Main {
             System.out.println("User already registered.");
         }else{
             app.addUser(name);
+            System.out.println("User successfully created.");
         }
     }
 
@@ -84,7 +85,6 @@ public class Main {
         in.nextLine();
         int numOfParticipants = in.nextInt();
         in.nextLine();
-        String proposer = in.next().trim();
 
         String[] participants = new String[numOfParticipants];
         boolean canAdd = true;
@@ -102,7 +102,7 @@ public class Main {
             canAdd = false;
         }
 
-        if(canAdd && !app.isUserAvailable(proposer)){
+        if(canAdd && !app.isUserAvailable(participants[0], day, startHour, endHour)){
             System.out.println(PROPOSER_NOT_AVAILABLE);
             canAdd = false;
         }
@@ -121,8 +121,13 @@ public class Main {
         }
 
         if(canAdd){
-            app.addEvent(eventName, day, startHour, endHour, numOfParticipants, proposer);
+            app.addEvent(eventName, day, startHour, endHour, numOfParticipants, participants[0]);
+            addEventToUsers(app, eventName, participants);
+            System.out.println( "Event successfully created." );
         }
+
+
+        
     }
 
     private static void handleCancel(Scanner in, SharedCalendarApp app){
@@ -146,7 +151,7 @@ public class Main {
         }else if(app.isCalendarEmpty(userName)){
             System.out.printf("User %s has no events.\n", userName);
         }else{
-            Iterator it = app.getEventsIterator(userName);
+            Iterator it = app.getShowEventsIterator(userName);
             while(it.hasNext()){
                 Event event = it.next();
                 String eventName = event.getName();
@@ -172,8 +177,8 @@ public class Main {
                 int day = event.getDay();
                 int startHour = event.getStartHour();
                 int endHour = event.getEndHour();
-                System.out.printf("%s: %d participants",eventName, numOfParticipants);
-                System.out.printf(", day %d, %d-%d\n", day, startHour, endHour);
+                System.out.printf("%s, day %d, %d-%d, %d participants.\n",
+                        eventName, day, startHour, endHour, numOfParticipants);
             }
         }
     }
