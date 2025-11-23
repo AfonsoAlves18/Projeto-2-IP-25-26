@@ -125,24 +125,23 @@ public class SharedCalendarApp {
         return numOfEvents == 0;
     }
 
-    public Iterator getTopEventsIterator() {
-        sortEvents();
-        return new Iterator(events, numOfEvents);
-
-    }
-
     public Iterator getShowEventsIterator(String userName) {
         User user = getUser(userName);
         return user.getSortedIterator();
     }
 
-    private void sortEvents(){
+    public Iterator getTopEventsIterator(){
         Event[] sortedEvents = new Event[numOfEvents];
-        for (int i = 0; i < numOfEvents; i++) {
-            sortedEvents[i] = this.events[i];
+        int index = 0;
+        for(int i = 0; i<numOfEvents; i++){
+            if(events[i].getNumOfParticipants() == getMostParticipants()){
+                sortedEvents[index] = events[i];
+                index++;
+            }
         }
-        for(int i = 0; i < numOfEvents - 1; i++){
-            for(int j = i + 1; j < numOfEvents; j++){
+
+        for(int i = 0; i < index - 1; i++){
+            for(int j = i + 1; j < index; j++){
                 boolean needsSwapping = needsSwap(sortedEvents, j, i);
 
                 if (needsSwapping) {
@@ -152,9 +151,21 @@ public class SharedCalendarApp {
                 }
             }
         }
+        return new Iterator(sortedEvents,index);
     }
 
-    private static boolean needsSwap(Event[] sortedEvents, int j, int i) {
+    private int getMostParticipants(){
+        int mostParticipants=0;
+        for (int i = 0; i < numOfEvents; i++) {
+            if(events[i].getNumOfParticipants() > mostParticipants){
+                mostParticipants = events[i].getNumOfParticipants();
+            }
+        }
+        return mostParticipants;
+    }
+
+
+    private boolean needsSwap(Event[] sortedEvents, int j, int i) {
         boolean needsSwapping = false;
 
         if (sortedEvents[j].getDay() < sortedEvents[i].getDay()) {

@@ -8,8 +8,14 @@ public class Main {
     private static final String EVENT_ALREADY_EXISTS = "Event already exists.";
     private static final String PROPOSER_NOT_AVAILABLE = "Proposer not available.";
     private static final String USER_NOT_AVAILABLE = "Some user not available.";
+    private static final String USER_ALREADY_REGISTERED = "User already registered.";
+    private static final String USER_NOT_REGISTERED = "User not registered.";
+    private static final String USER_CREATED = "User successfully created.";
+    private static final String EVENT_CREATED = "Event successfully created.";
+    private static final String EVENT_CANCELED = "Event successfully canceled.";
     private static final String NO_EVENTS_REGISTERED = "No events registered.";
     private static final String INVALID_COMMAND = "Invalid command.";
+
     private static final String CREATE = "create";
     private static final String SCHEDULE = "schedule";
     private static final String CANCEL = "cancel";
@@ -24,11 +30,11 @@ public class Main {
 
         //String fileName = input.nextLine();
 
-       // FileReader reader = new FileReader("src/" + fileName);
-       // Scanner in = new Scanner(reader);
+        //FileReader reader = new FileReader("src/" + fileName);
+        //Scanner fileScanner = new Scanner(reader);
 
         SharedCalendarApp app = new SharedCalendarApp();
-        //initialize(in, app);
+        //initialize(fileScanner, app);
 
         handleInput(input, app);
         //in.close();
@@ -38,8 +44,9 @@ public class Main {
     private static void handleInput(Scanner input, SharedCalendarApp app){
 
         String command = input.next().trim();
+        input.nextLine();
 
-        do {
+        while(!command.equals(EXIT)){
             switch (command) {
                 case CREATE -> handleCreate(input, app);
                 case SCHEDULE -> handleSchedule(input, app);
@@ -49,8 +56,7 @@ public class Main {
                 default -> System.out.println(INVALID_COMMAND);
             }
             command = input.next().trim();
-
-        }while (!command.equals(EXIT));
+        }
 
         System.out.println(APP_EXITED);
     }
@@ -70,84 +76,124 @@ public class Main {
     private static void handleCreate(Scanner in, SharedCalendarApp app){
         String name = in.nextLine().trim();
         if(app.doesUserExist(name)){
-            System.out.println("User already registered.");
+            System.out.println(USER_ALREADY_REGISTERED);
         }else{
             app.addUser(name);
-            System.out.println("User successfully created.");
+            System.out.println(USER_CREATED);
         }
     }
 
-    private static void handleSchedule(Scanner in,SharedCalendarApp app){
+    private static void handleSchedule(Scanner in, SharedCalendarApp app){
         String eventName = in.next().trim();
         int day = in.nextInt();
         int startHour = in.nextInt();
         int endHour = in.nextInt();
         in.nextLine();
+
         int numOfParticipants = in.nextInt();
         in.nextLine();
 
-        String[] participants = new String[numOfParticipants];
-        boolean canAdd = true;
+        String[] participants = readParticipants(in, numOfParticipants);
+        boolean canAdd;
 
-        for(int i=0; i<numOfParticipants; i++){
+        canAdd = validateParticipantsRegistered(app,participants);
+
+        if (canAdd) canAdd = validateEventDoesNotExist(app,eventName);
+
+        if (canAdd) canAdd = validateProposerAvailable(app,participants[0],day,startHour,endHour);
+
+        if (canAdd) canAdd = validateAllUsersAvailable(app,participants,day,startHour,endHour);
+
+        if (canAdd) createAndRegisterEvent(app,eventName,day,startHour,endHour,participants);
+    }
+
+
+    private static String[] readParticipants(Scanner in, int numOfParticipants) {
+        String[] participants = new String[numOfParticipants];
+        for (int i = 0; i < numOfParticipants; i++) {
             participants[i] = in.next().trim();
-            if(!app.doesUserExist(participants[i])){
+        }
+        return participants;
+    }
+
+    private static boolean validateParticipantsRegistered(SharedCalendarApp app, String[] participants) {
+        boolean allRegistered = true;
+        for (int i = 0; i < participants.length; i++) {
+            if (!app.doesUserExist(participants[i])) {
                 System.out.println(NOT_REGISTERED);
+                allRegistered = false;
+            }
+        }
+        return allRegistered;
+    }
+
+    private static boolean validateEventDoesNotExist(SharedCalendarApp app, String eventName) {
+        if (app.doesEventExist(eventName)) {
+            System.out.println(EVENT_ALREADY_EXISTS);
+            return false;
+        }
+        return true;
+    }
+
+    private static boolean validateProposerAvailable(SharedCalendarApp app, String proposer, int day,
+                                                     int startHour, int endHour) {
+        if (!app.isUserAvailable(proposer, day, startHour, endHour)) {
+            System.out.println(PROPOSER_NOT_AVAILABLE);
+            return false;
+        }
+        return true;
+    }
+
+    private static boolean validateAllUsersAvailable(SharedCalendarApp app, String[] participants,
+                                                     int day, int startHour, int endHour) {
+
+        boolean canAdd = true;
+        boolean userUnavailablePrinted = false;
+
+        for (int i = 0; i < participants.length; i++) {
+            if (!app.isUserAvailable(participants[i], day, startHour, endHour)) {
+                if (!userUnavailablePrinted) {
+                    System.out.println(USER_NOT_AVAILABLE);
+                    userUnavailablePrinted = true;
+                }
                 canAdd = false;
             }
         }
-
-        if(canAdd && app.doesEventExist(eventName)){
-            System.out.println(EVENT_ALREADY_EXISTS);
-            canAdd = false;
-        }
-
-        if(canAdd && !app.isUserAvailable(participants[0], day, startHour, endHour)){
-            System.out.println(PROPOSER_NOT_AVAILABLE);
-            canAdd = false;
-        }
-
-        if(canAdd){
-            boolean userUnavailable = false;
-            for(int i=0; i<numOfParticipants; i++){
-                if(!app.isUserAvailable(participants[i], day, startHour, endHour)){
-                    if(!userUnavailable){
-                        System.out.println(USER_NOT_AVAILABLE);
-                        userUnavailable = true;
-                    }
-                    canAdd = false;
-                }
-            }
-        }
-
-        if(canAdd){
-            app.addEvent(eventName, day, startHour, endHour, numOfParticipants, participants[0]);
-            addEventToUsers(app, eventName, participants);
-            System.out.println( "Event successfully created." );
-        }
+        return canAdd;
+    }
 
 
-        
+    private static void createAndRegisterEvent(SharedCalendarApp app, String eventName, int day,
+                                               int startHour, int endHour, String[] participants) {
+        int numOfParticipants = participants.length;
+        String proposer = participants[0];
+
+        app.addEvent(eventName, day, startHour, endHour, numOfParticipants, proposer);
+        addEventToUsers(app, eventName, participants);
+        System.out.println(EVENT_CREATED);
     }
 
     private static void handleCancel(Scanner in, SharedCalendarApp app){
         String eventName = in.next().trim();
         String userName = in.nextLine().trim();
+        
         if(!app.doesUserExist(userName)){
-            System.out.println("User not registered.");
+            System.out.println(USER_NOT_REGISTERED);
         }else if(!app.isEventOnCalendar(eventName, userName)){
             System.out.printf("Event not found in calendar of %s.\n", userName);
-        }else if(!app.isUserProposer(eventName, userName)){
+        }else if(!app.isUserProposer(userName, eventName)){
             System.out.printf("User %s did not create event %s.\n", userName, eventName);
         }else{
             app.cancelEvent(eventName);
+            System.out.println(EVENT_CANCELED);
         }
     }
 
     private static void handleShow(Scanner in, SharedCalendarApp app){
         String userName = in.nextLine().trim();
+        
         if(!app.doesUserExist(userName)){
-            System.out.println("User not registered.");
+            System.out.println(USER_NOT_REGISTERED);
         }else if(app.isCalendarEmpty(userName)){
             System.out.printf("User %s has no events.\n", userName);
         }else{
@@ -190,5 +236,3 @@ public class Main {
         }
     }
 }
-
-
