@@ -28,7 +28,6 @@ public class User {
         calendar.removeEvent(eventName);
     }
 
-
     public Iterator getSortedIterator() {
         return calendar.getSortedIterator();
     }

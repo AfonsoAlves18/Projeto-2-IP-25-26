@@ -218,7 +218,7 @@ public class Main {
     }
 
     private static void handleTop(SharedCalendarApp app){
-        if(app.isEventCalendarEmpty()){
+        if(app.isEventArrayEmpty()){
             System.out.println(NO_EVENTS_REGISTERED);
         }else{
             Iterator it = app.getTopEventsIterator();

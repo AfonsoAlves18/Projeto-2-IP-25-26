@@ -1,8 +1,9 @@
 public class SharedCalendarApp {
 
+    private static final int DEFAULT_CAPACITY = 100;
+
     User[] users;
     Event[] events;
-    private static final int DEFAULT_CAPACITY = 100;
     int numOfUsers;
     int numOfEvents;
 
@@ -22,6 +23,30 @@ public class SharedCalendarApp {
         return null;
     }
 
+    public boolean doesUserExist(String name){
+        return getUser(name) != null;
+    }
+
+    public void addUser(String name){
+        if(isUsersFull())
+            resizeUsers();
+
+        users[numOfUsers]= new User(name);
+        numOfUsers++;
+    }
+
+    private boolean isUsersFull(){
+        return numOfUsers == users.length;
+    }
+
+    private void resizeUsers(){
+        User[] temp = new User[users.length*2];
+        for(int i = 0; i<users.length; i++){
+            temp[i] = users[i];
+        }
+        this.users = temp;
+    }
+
     private Event getEvent(String eventName ){
         for(int i = 0; i<numOfEvents; i++){
             if(eventName.equals(events[i].getName())){
@@ -31,49 +56,35 @@ public class SharedCalendarApp {
         return null;
     }
 
-    public void addUser(String name){
-        if(isUsersFull())
-            resize();
-
-        users[numOfUsers]= new User(name);
-        numOfUsers++;
-    }
-
-    public boolean doesUserExist(String name){
-        return getUser(name) != null;
-    }
-
     public boolean doesEventExist(String name){
         return getEvent(name) != null;
     }
 
     public void addEvent(String eventName ,int day, int startHour, int endHour, int numOfParticipants, String proposer){
+        if(isEventsFull())
+            resizeEvents();
+
         Event event = new Event(eventName,day,startHour,endHour,numOfParticipants,proposer);
         events[numOfEvents] = event;
         numOfEvents++;
-
-    }
-
-    public void registerEventToUsers(String eventName, String userName){
-        Event event = getEvent(eventName);
-        User user = getUser(userName);
-        user.addEvent(event);
-    }
-
-    private boolean isUsersFull(){
-        return numOfUsers == users.length;
     }
 
     private boolean isEventsFull(){
         return numOfEvents == events.length;
     }
 
-    private void resize(){
-        User[] temp = new User[users.length*2];
-        for(int i = 0; i<users.length; i++){
-            temp[i] = users[i];
+    private void resizeEvents(){
+        Event[] temp = new Event[events.length*2];
+        for(int i = 0; i<events.length; i++){
+            temp[i] = events[i];
         }
-        this.users = temp;
+        this.events = temp;
+    }
+
+    public void registerEventToUsers(String eventName, String userName){
+        Event event = getEvent(eventName);
+        User user = getUser(userName);
+        user.addEvent(event);
     }
 
 
@@ -92,6 +103,15 @@ public class SharedCalendarApp {
         return event.getProposer().equals(userName);
     }
 
+    public boolean isCalendarEmpty(String userName) {
+        User user = getUser(userName);
+        return user.isCalendarEmpty();
+    }
+
+    public boolean isEventArrayEmpty() {
+        return numOfEvents == 0;
+    }
+
     public void cancelEvent(String eventName) {
         for(int i=0; i<numOfUsers; i++){
             User user = users[i];
@@ -101,12 +121,6 @@ public class SharedCalendarApp {
             }
         }
     }
-
-    public boolean isCalendarEmpty(String userName) {
-        User user = getUser(userName);
-        return user.isCalendarEmpty();
-    }
-
 
     private void removeEvent(String eventName) {
         for(int i = 0; i < numOfEvents; i++){
@@ -121,60 +135,67 @@ public class SharedCalendarApp {
         }
     }
 
-    public boolean isEventCalendarEmpty() {
-        return numOfEvents == 0;
-    }
-
     public Iterator getShowEventsIterator(String userName) {
         User user = getUser(userName);
         return user.getSortedIterator();
     }
 
     public Iterator getTopEventsIterator(){
-        Event[] sortedEvents = new Event[numOfEvents];
+        Event[] topEvents = extractTopEvents();
+        sortEvents(topEvents);
+        return new Iterator(topEvents,topEvents.length);
+    }
+
+    private Event[] extractTopEvents(){
+        int max = getMostParticipants();
+        int count = 0;
+
+        for(int i = 0; i < numOfEvents; i++){
+            if(events[i].getNumOfParticipants() == max) count++;
+        }
+
+        Event[] top = new Event[count];
         int index = 0;
         for(int i = 0; i<numOfEvents; i++){
-            if(events[i].getNumOfParticipants() == getMostParticipants()){
-                sortedEvents[index] = events[i];
+            if(events[i].getNumOfParticipants() == max){
+                top[index] = events[i];
                 index++;
             }
         }
-
-        for(int i = 0; i < index - 1; i++){
-            for(int j = i + 1; j < index; j++){
-                boolean needsSwapping = needsSwap(sortedEvents, j, i);
-
-                if (needsSwapping) {
-                    Event temp = sortedEvents[i];
-                    sortedEvents[i] = sortedEvents[j];
-                    sortedEvents[j] = temp;
-                }
-            }
-        }
-        return new Iterator(sortedEvents,index);
+        return top;
     }
 
     private int getMostParticipants(){
-        int mostParticipants=0;
+        int max = 0;
         for (int i = 0; i < numOfEvents; i++) {
-            if(events[i].getNumOfParticipants() > mostParticipants){
-                mostParticipants = events[i].getNumOfParticipants();
+            max = Math.max(max, events[i].getNumOfParticipants());
+        }
+        return max;
+    }
+
+    private void sortEvents(Event[] topEvents){
+        for(int i = 0; i < topEvents.length - 1; i++){
+            for(int j = i + 1; j < topEvents.length; j++){
+                if(needsSwap(topEvents, j, i)){
+                    Event temp = topEvents[i];
+                    topEvents[i] = topEvents[j];
+                    topEvents[j] = temp;
+                }
             }
         }
-        return mostParticipants;
     }
 
 
-    private boolean needsSwap(Event[] sortedEvents, int j, int i) {
+    private boolean needsSwap(Event[] topEvents, int j, int i) {
         boolean needsSwapping = false;
 
-        if (sortedEvents[j].getDay() < sortedEvents[i].getDay()) {
+        if (topEvents[j].getDay() < topEvents[i].getDay()) {
             needsSwapping = true;
-        } else if (sortedEvents[j].getDay() == sortedEvents[i].getDay()
-                && sortedEvents[j].getStartHour() < sortedEvents[i].getStartHour()) {
+        } else if (topEvents[j].getDay() == topEvents[i].getDay()
+                && topEvents[j].getStartHour() < topEvents[i].getStartHour()) {
             needsSwapping = true;
-        }else if (sortedEvents[j].getStartHour() == sortedEvents[i].getStartHour()
-                && sortedEvents[j].getName().compareTo(sortedEvents[i].getName()) < 0) {
+        }else if (topEvents[j].getStartHour() == topEvents[i].getStartHour()
+                && topEvents[j].getName().compareTo(topEvents[i].getName()) < 0) {
             needsSwapping = true;
         }
         return needsSwapping;
