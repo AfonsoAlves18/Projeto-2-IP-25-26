@@ -1,7 +1,7 @@
 public class User {
 
-    private String name;
-    private Calendar calendar;
+    private final String name;
+    private final Calendar calendar;
 
     public User(String name){
         this.name = name;
