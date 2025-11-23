@@ -162,7 +162,6 @@ public class Main {
         return canAdd;
     }
 
-
     private static void createAndRegisterEvent(SharedCalendarApp app, String eventName, int day,
                                                int startHour, int endHour, String[] participants) {
         int numOfParticipants = participants.length;
@@ -173,10 +172,17 @@ public class Main {
         System.out.println(EVENT_CREATED);
     }
 
+    private static void addEventToUsers(SharedCalendarApp app, String eventName, String[] participants){
+        for (int i = 0; i < participants.length; i++) {
+            String userName = participants[i];
+            app.registerEventToUsers(eventName, userName);
+        }
+    }
+
     private static void handleCancel(Scanner in, SharedCalendarApp app){
         String eventName = in.next().trim();
         String userName = in.nextLine().trim();
-        
+
         if(!app.doesUserExist(userName)){
             System.out.println(USER_NOT_REGISTERED);
         }else if(!app.isEventOnCalendar(eventName, userName)){
@@ -191,7 +197,7 @@ public class Main {
 
     private static void handleShow(Scanner in, SharedCalendarApp app){
         String userName = in.nextLine().trim();
-        
+
         if(!app.doesUserExist(userName)){
             System.out.println(USER_NOT_REGISTERED);
         }else if(app.isCalendarEmpty(userName)){
@@ -229,10 +235,5 @@ public class Main {
         }
     }
     
-    private static void addEventToUsers(SharedCalendarApp app, String eventName, String[] participants){
-        for (int i = 0; i < participants.length; i++) {
-            String userName = participants[i];
-            app.registerEventToUsers(eventName, userName);
-        }
-    }
+
 }
