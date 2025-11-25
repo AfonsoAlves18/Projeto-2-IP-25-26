@@ -1,0 +1,26 @@
+User successfully created.
+User successfully created.
+User successfully created.
+User successfully created.
+User successfully created.
+User successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+PairMeeting, day 1, 10-12, 2 participants.
+MorningSlot, day 2, 8-10, 2 participants.
+MidSlot, day 2, 10-12, 2 participants.
+AfternoonSlot, day 2, 12-14, 2 participants.
+AliceProject, day 3, 10-12, 2 participants.
+AllHands, day 4, 16-18, 10 participants.
+PairMeeting, day 1, 10-12, 2 participants.
+BobProject, day 3, 10-12, 2 participants.
+AllHands, day 4, 16-18, 10 participants.
+MorningSlot, day 2, 8-10, 2 participants.
+AllHands, day 4, 16-18, 10 participants.
+AllHands, day 4, 16-18, 10 participants.
+Application exited.

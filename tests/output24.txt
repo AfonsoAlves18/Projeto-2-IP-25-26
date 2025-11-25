@@ -1,0 +1,14 @@
+User Alice has no events.
+User Bob has no events.
+User Carol has no events.
+User Dan has no events.
+No events registered.
+Event successfully created.
+Event successfully canceled.
+User Alice has no events.
+User Bob has no events.
+No events registered.
+User successfully created.
+User Eve has no events.
+No events registered.
+Application exited.

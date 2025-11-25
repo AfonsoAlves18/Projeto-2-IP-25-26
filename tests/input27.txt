@@ -1,0 +1,35 @@
+cal_user4.txt
+schedule Mon10to12 1 10 12
+1
+Alice
+schedule Tue10to12 2 10 12
+1
+Alice
+schedule Wed10to12 3 10 12
+1
+Alice
+schedule Thu10to12 4 10 12
+1
+Alice
+schedule Fri10to12 5 10 12
+1
+Alice
+schedule Fri8to9 5 8 9
+2
+Alice Bob
+schedule Mon14to16 1 14 16
+2
+Bob Carol
+schedule Wed14to16 3 14 16
+2
+Carol Dan
+show Alice
+show Bob
+show Carol
+show Dan
+top
+cancel Wed10to12 Alice
+cancel Fri10to12 Alice
+show Alice
+top
+exit

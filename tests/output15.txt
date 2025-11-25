@@ -1,0 +1,13 @@
+Event successfully created.
+SoloA, day 1, 10-12, 1 participants.
+Event successfully created.
+Event successfully created.
+TrioABC, day 2, 14-16, 3 participants.
+Event successfully created.
+QuadMorning, day 3, 8-10, 4 participants.
+Event successfully created.
+Event successfully created.
+QuadAfternoon, day 1, 14-16, 4 participants.
+QuadMorning, day 3, 8-10, 4 participants.
+QuadLate, day 5, 18-20, 4 participants.
+Application exited.

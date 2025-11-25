@@ -1,0 +1,14 @@
+cal_user4.txt
+CREATE Alice
+Schedule Meeting 1 10 12
+CANCEL Meeting Alice
+Show Alice
+TOP top
+Exit exit
+eXit
+exIt
+CREATE
+hello
+help
+random
+exit

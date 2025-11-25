@@ -1,0 +1,12 @@
+cal_base.txt
+show Dan
+show Ivan
+cancel TeamSync Alice
+cancel ProjectReview Carol
+show Dan
+cancel ThuAllHands Alice
+show Dan
+show Ivan
+create Zoe
+show Zoe
+exit

@@ -1,0 +1,58 @@
+cal_user4.txt
+schedule Mon8to9 1 8 9
+1
+Alice
+schedule Mon9to10 1 9 10
+1
+Alice
+schedule Mon10to11 1 10 11
+1
+Alice
+schedule Mon11to12 1 11 12
+1
+Alice
+schedule Mon12to13 1 12 13
+1
+Alice
+schedule Mon13to14 1 13 14
+1
+Alice
+schedule Mon14to15 1 14 15
+1
+Alice
+schedule Mon15to16 1 15 16
+1
+Alice
+schedule Mon16to17 1 16 17
+1
+Alice
+schedule Mon17to18 1 17 18
+1
+Alice
+schedule Mon18to19 1 18 19
+1
+Alice
+schedule Mon19to20 1 19 20
+1
+Alice
+schedule OverlapMiddle 1 10 11
+1
+Alice
+schedule Tue8to20 2 8 20
+1
+Bob
+schedule OverlapBob 2 10 15
+1
+Bob
+schedule Wed8to10 3 8 10
+1
+Alice
+schedule Wed10to12 3 10 12
+1
+Alice
+schedule WedOverlap 3 9 11
+1
+Alice
+show Alice
+show Bob
+exit

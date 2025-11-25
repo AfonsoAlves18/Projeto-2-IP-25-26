@@ -1,0 +1,33 @@
+cal_user4.txt
+create Eve
+create Frank
+create Grace
+create Heidi
+create Ivan
+create Judy
+schedule PairMeeting 1 10 12
+2
+Alice Bob
+schedule MorningSlot 2 8 10
+2
+Alice Carol
+schedule MidSlot 2 10 12
+2
+Alice Dan
+schedule AfternoonSlot 2 12 14
+2
+Alice Eve
+schedule AliceProject 3 10 12
+2
+Alice Eve
+schedule BobProject 3 10 12
+2
+Bob Frank
+schedule AllHands 4 16 18
+10
+Alice Bob Carol Dan Eve Frank Grace Heidi Ivan Judy
+show Alice
+show Bob
+show Carol
+show Judy
+exit

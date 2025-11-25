@@ -1,0 +1,9 @@
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+AliceFullDay, day 1, 8-20, 1 participants.
+BobMorning1, day 1, 8-9, 1 participants.
+CarolMorning5, day 5, 8-9, 1 participants.
+DanEvening5, day 5, 19-20, 1 participants.
+Application exited.

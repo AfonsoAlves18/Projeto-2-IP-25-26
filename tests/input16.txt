@@ -1,0 +1,34 @@
+cal_user4.txt
+top
+schedule Day1Early 1 8 10
+2
+Alice Bob
+schedule Day1Later 1 9 11
+2
+Carol Dan
+schedule Day2Short 2 9 10
+2
+Alice Carol
+schedule Day2Long 2 9 11
+2
+Bob Dan
+schedule AlphaTie 3 10 12
+2
+Alice Bob
+schedule BetaTie 3 10 12
+2
+Carol Dan
+schedule AliceSolo 5 8 9
+1
+Alice
+top
+cancel AliceSolo Alice
+cancel Day2Long Bob
+cancel Day1Early Alice
+top
+cancel Day1Later Carol
+cancel Day2Short Alice
+cancel AlphaTie Alice
+cancel BetaTie Carol
+top
+exit

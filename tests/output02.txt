@@ -1,0 +1,7 @@
+User already registered.
+User successfully created.
+User successfully created.
+User already registered.
+User already registered.
+User successfully created.
+Application exited.

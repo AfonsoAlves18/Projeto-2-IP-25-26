@@ -1,0 +1,25 @@
+No events registered.
+Event successfully created.
+E1, day 1, 10-12, 1 participants.
+E1, day 1, 10-12, 1 participants.
+Event successfully created.
+E2, day 2, 10-12, 2 participants.
+E1, day 1, 10-12, 1 participants.
+E2, day 2, 10-12, 2 participants.
+E2, day 2, 10-12, 2 participants.
+Event successfully created.
+E3, day 3, 10-12, 3 participants.
+Event successfully canceled.
+E3, day 3, 10-12, 3 participants.
+E2, day 2, 10-12, 2 participants.
+E3, day 3, 10-12, 3 participants.
+Event successfully canceled.
+E2, day 2, 10-12, 2 participants.
+E2, day 2, 10-12, 2 participants.
+E2, day 2, 10-12, 2 participants.
+User Carol has no events.
+Event successfully canceled.
+No events registered.
+User Alice has no events.
+User Bob has no events.
+Application exited.

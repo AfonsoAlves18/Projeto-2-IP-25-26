@@ -1,0 +1,65 @@
+cal_base.txt
+schedule NoSuchProposer 1 8 10
+2
+Ghost Alice
+schedule OneBadInvitee 2 10 12
+2
+Alice Unknown1
+schedule TwoBadInvitees 3 9 11
+3
+Bob Unknown2 Unknown3
+schedule ProposerExistsInviteeNot 4 16 18
+2
+Carol Unknown4
+schedule MixedGoodBad 5 8 10
+4
+Dan Eve Unknown5 Unknown6
+schedule AMonMorning 5 9 11
+1
+Alice
+schedule TeamSync 1 8 10
+2
+Carol Dan
+schedule ThuAllHands 4 10 12
+1
+Bob
+schedule thuallhands 4 10 12
+1
+Alice
+schedule PropExact 1 10 12
+3
+Alice Grace Heidi
+schedule PropPartialStart 1 9 11
+3
+Alice Grace Heidi
+schedule PropPartialEnd 1 11 13
+3
+Alice Grace Heidi
+schedule PropContainsExisting 1 9 13
+3
+Alice Grace Heidi
+schedule PropInsideExisting 1 10 11
+3
+Alice Grace Heidi
+schedule PropSingleHourOverlap 1 11 12
+3
+Alice Grace Heidi
+schedule InviteeBusy1 1 10 12
+2
+Grace Alice
+schedule InviteeBusy2 1 10 12
+3
+Grace Alice Bob
+schedule AllBusySameEvent 2 14 16
+5
+Grace Alice Bob Carol Dan
+schedule SlotA 5 10 12
+1
+Alice
+schedule SlotB 5 10 12
+1
+Bob
+schedule InviteesDifferentEvents 5 10 12
+3
+Ivan Alice Bob
+exit

@@ -1,0 +1,52 @@
+User successfully created.
+User successfully created.
+User successfully created.
+User successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+ThuAllHands, day 4, 16-18, 10 participants.
+Proposer not available.
+Some user not available.
+Some user not available.
+ThuAllHands, day 4, 16-18, 10 participants.
+Event successfully canceled.
+Event successfully canceled.
+Event successfully created.
+Event successfully created.
+AMonMorning, day 1, 8-10, 1 participants.
+AMonMid, day 1, 10-12, 2 participants.
+NewMonCollab, day 1, 12-14, 3 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+RescheduledTeam, day 2, 14-16, 4 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+FriMorning, day 5, 8-10, 3 participants.
+AMonMid, day 1, 10-12, 2 participants.
+NewMonCollab, day 1, 12-14, 3 participants.
+BTueBlock, day 2, 9-12, 1 participants.
+TueDesign, day 2, 12-14, 3 participants.
+RescheduledTeam, day 2, 14-16, 4 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+TueDesign, day 2, 12-14, 3 participants.
+RescheduledTeam, day 2, 14-16, 4 participants.
+CWedMorning, day 3, 8-10, 1 participants.
+NewReview, day 3, 10-12, 3 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+RescheduledTeam, day 2, 14-16, 4 participants.
+NewReview, day 3, 10-12, 3 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+FriMorning, day 5, 8-10, 3 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Event successfully canceled.
+Event successfully canceled.
+Event successfully canceled.
+AMonMorning, day 1, 8-10, 1 participants.
+AMonMid, day 1, 10-12, 2 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+RescheduledTeam, day 2, 14-16, 4 participants.
+FriMorning, day 5, 8-10, 3 participants.
+FriSupport, day 5, 8-20, 2 participants.
+RescheduledTeam, day 2, 14-16, 4 participants.
+Application exited.

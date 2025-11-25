@@ -1,0 +1,12 @@
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+MaxParticipants, day 1, 10-12, 10 participants.
+MinDuration, day 2, 8-9, 2 participants.
+MaxDuration, day 3, 8-20, 2 participants.
+BoundaryEarly, day 4, 8-10, 1 participants.
+BoundaryLate, day 5, 18-20, 1 participants.
+MaxParticipants, day 1, 10-12, 10 participants.
+Application exited.

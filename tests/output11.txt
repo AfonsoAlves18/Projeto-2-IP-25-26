@@ -1,0 +1,42 @@
+AMonAfternoon, day 1, 14-16, 2 participants.
+TeamSync, day 2, 14-16, 4 participants.
+CWedMorning, day 3, 8-10, 1 participants.
+ProjectReview, day 3, 10-12, 3 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+TeamSync, day 2, 14-16, 4 participants.
+ProjectReview, day 3, 10-12, 3 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+ProjectReview, day 3, 10-12, 3 participants.
+Workshop, day 3, 13-17, 2 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Event successfully canceled.
+AMonAfternoon, day 1, 14-16, 2 participants.
+TeamSync, day 2, 14-16, 4 participants.
+CWedMorning, day 3, 8-10, 1 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+TeamSync, day 2, 14-16, 4 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Workshop, day 3, 13-17, 2 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+AMonMorning, day 1, 8-10, 1 participants.
+AMonMid, day 1, 10-12, 2 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+TeamSync, day 2, 14-16, 4 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+ProjectReview, day 5, 10-12, 2 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+TeamSync, day 2, 14-16, 4 participants.
+CWedMorning, day 3, 8-10, 1 participants.
+CarolRebook, day 3, 10-12, 1 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+TeamSync, day 2, 14-16, 4 participants.
+DanRebook, day 3, 10-12, 1 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+EveRebook, day 3, 10-12, 1 participants.
+Workshop, day 3, 13-17, 2 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Application exited.

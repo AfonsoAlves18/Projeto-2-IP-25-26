@@ -1,0 +1,37 @@
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+ThuAllHands, day 4, 16-18, 10 participants.
+ProjectReview, day 3, 10-12, 3 participants.
+Workshop, day 3, 13-17, 2 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+TeamSync, day 2, 14-16, 4 participants.
+CWedMorning, day 3, 8-10, 1 participants.
+ProjectReview, day 3, 10-12, 3 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+AMonMorning, day 1, 8-10, 1 participants.
+AMonMid, day 1, 10-12, 2 participants.
+ALunch, day 1, 12-14, 1 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+TeamSync, day 2, 14-16, 4 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+GMon, day 1, 8-9, 1 participants.
+GTue, day 2, 8-9, 1 participants.
+GWed, day 3, 8-9, 1 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+FriSupport, day 5, 8-20, 2 participants.
+HMon, day 1, 9-10, 1 participants.
+HTue, day 2, 16-18, 1 participants.
+HWed, day 3, 9-11, 1 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+FriSupport, day 5, 8-20, 2 participants.
+JMonLate, day 1, 16-18, 1 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Application exited.

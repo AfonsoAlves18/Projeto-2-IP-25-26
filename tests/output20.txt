@@ -1,0 +1,17 @@
+Event successfully created.
+Proposer not available.
+Proposer not available.
+Proposer not available.
+Proposer not available.
+Proposer not available.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Proposer not available.
+Event successfully created.
+Before, day 1, 8-10, 1 participants.
+Base, day 1, 10-15, 1 participants.
+After, day 1, 15-17, 1 participants.
+Touch8to10, day 1, 8-9, 1 participants.
+TouchBase, day 1, 9-11, 1 participants.
+Application exited.

@@ -1,0 +1,35 @@
+User successfully created.
+User successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+AMonEarly, day 1, 8-9, 1 participants.
+AMonMid, day 1, 9-10, 1 participants.
+ATue, day 2, 10-12, 1 participants.
+AThu, day 4, 18-20, 1 participants.
+BMon, day 1, 14-16, 1 participants.
+BWed, day 3, 8-11, 1 participants.
+BFri, day 5, 19-20, 1 participants.
+CTue, day 2, 8-10, 1 participants.
+CThu, day 4, 12-14, 1 participants.
+CFri, day 5, 9-12, 1 participants.
+DMon, day 1, 18-20, 1 participants.
+DWed1, day 3, 12-13, 1 participants.
+DWed2, day 3, 13-15, 1 participants.
+ETue, day 2, 16-18, 1 participants.
+EFri, day 5, 10-11, 1 participants.
+FWed, day 3, 16-19, 1 participants.
+Application exited.

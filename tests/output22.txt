@@ -1,0 +1,21 @@
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Proposer not available.
+Proposer not available.
+Event successfully created.
+Event successfully created.
+Some user not available.
+Proposer not available.
+M1, day 1, 10-12, 2 participants.
+AliceBlock, day 2, 8-10, 1 participants.
+M2, day 1, 10-12, 2 participants.
+M5, day 1, 10-12, 2 participants.
+M1, day 1, 10-12, 2 participants.
+M2, day 1, 10-12, 2 participants.
+M3, day 1, 10-12, 2 participants.
+M4, day 1, 10-12, 2 participants.
+M5, day 1, 10-12, 2 participants.
+Application exited.

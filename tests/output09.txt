@@ -1,0 +1,33 @@
+User successfully created.
+User successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+AliceSolo1, day 1, 9-10, 1 participants.
+TeamAlpha, day 2, 14-16, 3 participants.
+TeamGamma, day 4, 16-18, 4 participants.
+BobSolo1, day 1, 10-11, 1 participants.
+TeamAlpha, day 2, 14-16, 3 participants.
+TeamBeta, day 3, 9-11, 3 participants.
+TeamAlpha, day 2, 14-16, 3 participants.
+TeamBeta, day 3, 9-11, 3 participants.
+TeamBeta, day 3, 9-11, 3 participants.
+TeamGamma, day 4, 16-18, 4 participants.
+TeamGamma, day 4, 16-18, 4 participants.
+TeamGamma, day 4, 16-18, 4 participants.
+Event successfully canceled.
+TeamAlpha, day 2, 14-16, 3 participants.
+TeamGamma, day 4, 16-18, 4 participants.
+Event successfully canceled.
+TeamGamma, day 4, 16-18, 4 participants.
+BobSolo1, day 1, 10-11, 1 participants.
+TeamBeta, day 3, 9-11, 3 participants.
+TeamBeta, day 3, 9-11, 3 participants.
+Event successfully canceled.
+User Alice has no events.
+TeamBeta, day 3, 9-11, 3 participants.
+User Eve has no events.
+User Frank has no events.
+Application exited.

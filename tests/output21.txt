@@ -1,0 +1,25 @@
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Epsilon, day 3, 10-12, 3 participants.
+Event successfully canceled.
+Epsilon, day 3, 10-12, 3 participants.
+Event successfully canceled.
+Epsilon, day 3, 10-12, 3 participants.
+Event successfully canceled.
+Beta, day 1, 12-13, 2 participants.
+Gamma, day 2, 10-12, 2 participants.
+Delta, day 2, 10-13, 2 participants.
+Theta, day 3, 14-16, 2 participants.
+Event successfully canceled.
+Event successfully canceled.
+Beta, day 1, 12-13, 2 participants.
+Theta, day 3, 14-16, 2 participants.
+Event successfully canceled.
+Event successfully canceled.
+No events registered.
+Application exited.

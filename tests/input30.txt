@@ -1,0 +1,67 @@
+cal_max.txt
+top
+show User001
+show User050
+show User100
+schedule NewEvent1 1 8 9
+1
+User001
+schedule NewEvent2 1 9 10
+1
+User002
+schedule ConflictEvent 1 8 9
+2
+User001 User013
+schedule MultiConflict 2 8 10
+5
+User037 User040 User043 User013 User015
+schedule ValidNew 3 8 9
+2
+User001 User002
+cancel Event001 User001
+show User001
+cancel Event049 User051
+show User051
+show User052
+show User060
+cancel Event050 User061
+show User061
+show User070
+cancel Event075 User041
+show User041
+show User050
+cancel Event076 User051
+show User051
+show User060
+top
+schedule AfterCancel1 4 14 15
+10
+User041 User042 User043 User044 User045 User046 User047 User048 User049 User050
+schedule AfterCancel2 4 15 16
+10
+User051 User052 User053 User054 User055 User056 User057 User058 User059 User060
+top
+cancel Event042 User097
+cancel Event070 User100
+cancel Event099 User009
+cancel Event100 User044
+show User001
+show User009
+show User044
+show User050
+show User097
+top
+schedule FinalEvent 5 8 9
+3
+User001 User009 User044
+show User001
+show User009
+show User044
+cancel FinalEvent User001
+cancel Event043 User003
+cancel Event097 User024
+show User003
+show User024
+show User026
+top
+exit

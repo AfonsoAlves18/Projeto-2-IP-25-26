@@ -1,0 +1,22 @@
+Some user not registered.
+Some user not registered.
+Some user not registered.
+Some user not registered.
+Some user not registered.
+Event already exists.
+Event already exists.
+Event already exists.
+Event successfully created.
+Proposer not available.
+Proposer not available.
+Proposer not available.
+Proposer not available.
+Proposer not available.
+Proposer not available.
+Some user not available.
+Some user not available.
+Some user not available.
+Event successfully created.
+Event successfully created.
+Some user not available.
+Application exited.

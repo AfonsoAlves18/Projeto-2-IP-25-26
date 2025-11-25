@@ -1,0 +1,18 @@
+cal_user4.txt
+schedule AliceFullDay 1 8 20
+1
+Alice
+schedule BobMorning1 1 8 9
+1
+Bob
+schedule CarolMorning5 5 8 9
+1
+Carol
+schedule DanEvening5 5 19 20
+1
+Dan
+show Alice
+show Bob
+show Carol
+show Dan
+exit

@@ -1,0 +1,39 @@
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event1, day 1, 10-12, 4 participants.
+Event2, day 2, 10-12, 4 participants.
+Event3, day 3, 10-12, 4 participants.
+Event4, day 4, 10-12, 2 participants.
+Event1, day 1, 10-12, 4 participants.
+Event2, day 2, 10-12, 4 participants.
+Event3, day 3, 10-12, 4 participants.
+Event4, day 4, 10-12, 2 participants.
+Event1, day 1, 10-12, 4 participants.
+Event2, day 2, 10-12, 4 participants.
+Event3, day 3, 10-12, 4 participants.
+User Bob did not create event Event1.
+User Carol did not create event Event2.
+Event successfully canceled.
+Event2, day 2, 10-12, 4 participants.
+Event3, day 3, 10-12, 4 participants.
+Event4, day 4, 10-12, 2 participants.
+Event2, day 2, 10-12, 4 participants.
+Event3, day 3, 10-12, 4 participants.
+Event4, day 4, 10-12, 2 participants.
+Event2, day 2, 10-12, 4 participants.
+Event3, day 3, 10-12, 4 participants.
+User Alice did not create event Event4.
+Event successfully canceled.
+Event2, day 2, 10-12, 4 participants.
+Event3, day 3, 10-12, 4 participants.
+Event2, day 2, 10-12, 4 participants.
+Event3, day 3, 10-12, 4 participants.
+Event successfully canceled.
+Event successfully canceled.
+User Alice has no events.
+User Bob has no events.
+User Carol has no events.
+User Dan has no events.
+Application exited.

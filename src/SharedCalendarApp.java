@@ -117,9 +117,9 @@ public class SharedCalendarApp {
             User user = users[i];
             if(user.hasEvent(eventName)){
                 user.cancelEvent(eventName);
-                removeEvent(eventName);
             }
         }
+        removeEvent(eventName);
     }
 
     private void removeEvent(String eventName) {
@@ -187,18 +187,19 @@ public class SharedCalendarApp {
 
 
     private boolean needsSwap(Event[] topEvents, int j, int i) {
-        boolean needsSwapping = false;
+        Event a = topEvents[i];
+        Event b = topEvents[j];
 
-        if (topEvents[j].getDay() < topEvents[i].getDay()) {
-            needsSwapping = true;
-        } else if (topEvents[j].getDay() == topEvents[i].getDay()
-                && topEvents[j].getStartHour() < topEvents[i].getStartHour()) {
-            needsSwapping = true;
-        }else if (topEvents[j].getStartHour() == topEvents[i].getStartHour()
-                && topEvents[j].getName().compareTo(topEvents[i].getName()) < 0) {
-            needsSwapping = true;
-        }
-        return needsSwapping;
+        if (b.getDay() < a.getDay()) return true;
+        if (b.getDay() > a.getDay()) return false;
+
+        if (b.getStartHour() < a.getStartHour()) return true;
+        if (b.getStartHour() > a.getStartHour()) return false;
+
+        if (b.getEndHour() < a.getEndHour()) return true;
+        if (b.getEndHour() > a.getEndHour()) return false;
+
+        return b.getName().compareTo(a.getName()) < 0;
     }
 
 }

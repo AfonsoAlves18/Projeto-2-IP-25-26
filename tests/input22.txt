@@ -1,0 +1,39 @@
+cal_user10.txt
+schedule M1 1 10 12
+2
+Alice Bob
+schedule M2 1 10 12
+2
+Carol Dan
+schedule M3 1 10 12
+2
+Eve Frank
+schedule M4 1 10 12
+2
+Grace Heidi
+schedule M5 1 10 12
+2
+Ivan Judy
+schedule ConflictAlice 1 10 12
+2
+Alice Carol
+schedule ConflictMultiple 1 10 12
+4
+Alice Bob Carol Dan
+schedule AliceBlock 2 8 10
+1
+Alice
+schedule BobBlock 2 8 10
+1
+Bob
+schedule TryBoth 2 8 10
+2
+Carol Alice
+schedule ProposerBusy 2 8 10
+2
+Alice Carol
+show Alice
+show Carol
+show Ivan
+top
+exit

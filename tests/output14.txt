@@ -1,0 +1,13 @@
+TeamSync, day 2, 14-16, 4 participants.
+ProjectReview, day 3, 10-12, 3 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Event successfully canceled.
+Event successfully canceled.
+ThuAllHands, day 4, 16-18, 10 participants.
+Event successfully canceled.
+User Dan has no events.
+User Ivan has no events.
+User successfully created.
+User Zoe has no events.
+Application exited.

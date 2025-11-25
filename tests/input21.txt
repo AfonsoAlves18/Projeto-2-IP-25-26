@@ -1,0 +1,36 @@
+cal_user4.txt
+schedule Zebra 1 10 12
+2
+Alice Bob
+schedule Alpha 1 10 12
+2
+Carol Dan
+schedule Beta 1 12 13
+2
+Alice Bob
+schedule Gamma 2 10 12
+2
+Alice Bob
+schedule Delta 2 10 13
+2
+Carol Dan
+schedule Epsilon 3 10 12
+3
+Alice Bob Carol
+schedule Theta 3 14 16
+2
+Alice Bob
+top
+cancel Zebra Alice
+top
+cancel Alpha Carol
+top
+cancel Epsilon Alice
+top
+cancel Gamma Alice
+cancel Delta Carol
+top
+cancel Beta Alice
+cancel Theta Alice
+top
+exit

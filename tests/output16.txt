@@ -1,0 +1,27 @@
+No events registered.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Day1Early, day 1, 8-10, 2 participants.
+Day1Later, day 1, 9-11, 2 participants.
+Day2Short, day 2, 9-10, 2 participants.
+Day2Long, day 2, 9-11, 2 participants.
+AlphaTie, day 3, 10-12, 2 participants.
+BetaTie, day 3, 10-12, 2 participants.
+Event successfully canceled.
+Event successfully canceled.
+Event successfully canceled.
+Day1Later, day 1, 9-11, 2 participants.
+Day2Short, day 2, 9-10, 2 participants.
+AlphaTie, day 3, 10-12, 2 participants.
+BetaTie, day 3, 10-12, 2 participants.
+Event successfully canceled.
+Event successfully canceled.
+Event successfully canceled.
+Event successfully canceled.
+No events registered.
+Application exited.

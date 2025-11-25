@@ -1,0 +1,34 @@
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Proposer not available.
+Event successfully created.
+Proposer not available.
+Event successfully created.
+Event successfully created.
+Proposer not available.
+Mon8to9, day 1, 8-9, 1 participants.
+Mon9to10, day 1, 9-10, 1 participants.
+Mon10to11, day 1, 10-11, 1 participants.
+Mon11to12, day 1, 11-12, 1 participants.
+Mon12to13, day 1, 12-13, 1 participants.
+Mon13to14, day 1, 13-14, 1 participants.
+Mon14to15, day 1, 14-15, 1 participants.
+Mon15to16, day 1, 15-16, 1 participants.
+Mon16to17, day 1, 16-17, 1 participants.
+Mon17to18, day 1, 17-18, 1 participants.
+Mon18to19, day 1, 18-19, 1 participants.
+Mon19to20, day 1, 19-20, 1 participants.
+Wed8to10, day 3, 8-10, 1 participants.
+Wed10to12, day 3, 10-12, 1 participants.
+Tue8to20, day 2, 8-20, 1 participants.
+Application exited.

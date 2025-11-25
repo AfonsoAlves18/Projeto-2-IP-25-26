@@ -1,0 +1,36 @@
+cal_base.txt
+schedule GMon 1 8 9
+1
+Grace
+schedule GTue 2 8 9
+1
+Grace
+schedule GWed 3 8 9
+1
+Grace
+schedule ALunch 1 12 14
+1
+Alice
+schedule BTueEarly 2 8 9
+1
+Bob
+schedule HMon 1 9 10
+1
+Heidi
+schedule HTue 2 16 18
+1
+Heidi
+schedule HWed 3 9 11
+1
+Heidi
+schedule JMonLate 1 16 18
+1
+Judy
+show Ivan
+show Eve
+show Carol
+show Alice
+show Grace
+show Heidi
+show Judy
+exit

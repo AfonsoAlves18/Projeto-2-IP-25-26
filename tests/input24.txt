@@ -1,0 +1,17 @@
+cal_user4.txt
+show Alice
+show Bob
+show Carol
+show Dan
+top
+schedule QuickEvent 1 10 12
+2
+Alice Bob
+cancel QuickEvent Alice
+show Alice
+show Bob
+top
+create Eve
+show Eve
+top
+exit

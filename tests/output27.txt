@@ -1,0 +1,32 @@
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Mon10to12, day 1, 10-12, 1 participants.
+Tue10to12, day 2, 10-12, 1 participants.
+Wed10to12, day 3, 10-12, 1 participants.
+Thu10to12, day 4, 10-12, 1 participants.
+Fri8to9, day 5, 8-9, 2 participants.
+Fri10to12, day 5, 10-12, 1 participants.
+Mon14to16, day 1, 14-16, 2 participants.
+Fri8to9, day 5, 8-9, 2 participants.
+Mon14to16, day 1, 14-16, 2 participants.
+Wed14to16, day 3, 14-16, 2 participants.
+Wed14to16, day 3, 14-16, 2 participants.
+Mon14to16, day 1, 14-16, 2 participants.
+Wed14to16, day 3, 14-16, 2 participants.
+Fri8to9, day 5, 8-9, 2 participants.
+Event successfully canceled.
+Event successfully canceled.
+Mon10to12, day 1, 10-12, 1 participants.
+Tue10to12, day 2, 10-12, 1 participants.
+Thu10to12, day 4, 10-12, 1 participants.
+Fri8to9, day 5, 8-9, 2 participants.
+Mon14to16, day 1, 14-16, 2 participants.
+Wed14to16, day 3, 14-16, 2 participants.
+Fri8to9, day 5, 8-9, 2 participants.
+Application exited.

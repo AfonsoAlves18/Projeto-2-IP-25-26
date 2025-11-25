@@ -1,0 +1,27 @@
+AMonMorning, day 1, 8-10, 1 participants.
+AMonMid, day 1, 10-12, 2 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+TeamSync, day 2, 14-16, 4 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Event successfully canceled.
+Event successfully canceled.
+Event successfully canceled.
+Event successfully created.
+NewMonBlock, day 1, 8-16, 1 participants.
+TeamSync, day 2, 14-16, 4 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Event successfully canceled.
+Event successfully created.
+NewMonBlock, day 1, 8-16, 1 participants.
+NewTueSync, day 2, 14-16, 2 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Event successfully canceled.
+Event successfully created.
+CWedMorning, day 3, 8-10, 1 participants.
+NewWedReview, day 3, 10-12, 3 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Event successfully canceled.
+NewWedReview, day 3, 10-12, 3 participants.
+Event successfully created.
+ThursRevival, day 4, 16-18, 10 participants.
+Application exited.

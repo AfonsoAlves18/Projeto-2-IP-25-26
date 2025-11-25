@@ -1,0 +1,36 @@
+cal_user4.txt
+create Eve
+create Frank
+schedule AliceSolo1 1 9 10
+1
+Alice
+schedule BobSolo1 1 10 11
+1
+Bob
+schedule TeamAlpha 2 14 16
+3
+Alice Bob Carol
+schedule TeamBeta 3 9 11
+3
+Bob Carol Dan
+schedule TeamGamma 4 16 18
+4
+Alice Dan Eve Frank
+show Alice
+show Bob
+show Carol
+show Dan
+show Eve
+show Frank
+cancel AliceSolo1 Alice
+show Alice
+cancel TeamAlpha Alice
+show Alice
+show Bob
+show Carol
+cancel TeamGamma Alice
+show Alice
+show Dan
+show Eve
+show Frank
+exit

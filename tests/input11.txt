@@ -1,0 +1,25 @@
+cal_base.txt
+show Carol
+show Dan
+show Eve
+cancel ProjectReview Carol
+show Carol
+show Dan
+show Eve
+schedule ProjectReview 5 10 12
+2
+Alice Bob
+schedule CarolRebook 3 10 12
+1
+Carol
+schedule DanRebook 3 10 12
+1
+Dan
+schedule EveRebook 3 10 12
+1
+Eve
+show Alice
+show Carol
+show Dan
+show Eve
+exit

@@ -1,0 +1,38 @@
+User successfully created.
+User successfully created.
+User successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+Event successfully created.
+TeamMeeting, day 1, 9-11, 4 participants.
+DesignReview, day 1, 14-16, 3 participants.
+Standup, day 3, 8-9, 3 participants.
+Retrospective, day 4, 12-14, 3 participants.
+AllHands, day 5, 16-20, 7 participants.
+TeamMeeting, day 1, 9-11, 4 participants.
+Planning, day 2, 10-12, 3 participants.
+Standup, day 3, 8-9, 3 participants.
+AllHands, day 5, 16-20, 7 participants.
+TeamMeeting, day 1, 9-11, 4 participants.
+DesignReview, day 1, 14-16, 3 participants.
+Standup, day 3, 8-9, 3 participants.
+Workshop, day 3, 15-18, 4 participants.
+AllHands, day 5, 16-20, 7 participants.
+TeamMeeting, day 1, 9-11, 4 participants.
+Planning, day 2, 10-12, 3 participants.
+Workshop, day 3, 15-18, 4 participants.
+Retrospective, day 4, 12-14, 3 participants.
+AllHands, day 5, 16-20, 7 participants.
+DesignReview, day 1, 14-16, 3 participants.
+Planning, day 2, 10-12, 3 participants.
+Workshop, day 3, 15-18, 4 participants.
+AllHands, day 5, 16-20, 7 participants.
+Workshop, day 3, 15-18, 4 participants.
+Retrospective, day 4, 12-14, 3 participants.
+AllHands, day 5, 16-20, 7 participants.
+AllHands, day 5, 16-20, 7 participants.
+Application exited.

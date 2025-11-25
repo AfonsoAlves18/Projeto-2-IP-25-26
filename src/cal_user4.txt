@@ -1,0 +1,6 @@
+4
+Alice
+Bob
+Carol
+Dan
+0

@@ -28,23 +28,25 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        //String fileName = input.nextLine();
+        String fileName = input.nextLine();
 
-        //FileReader reader = new FileReader("src/" + fileName);
-        //Scanner fileScanner = new Scanner(reader);
+        FileReader reader = new FileReader("src/" + fileName);
+        Scanner fileScanner = new Scanner(reader);
 
         SharedCalendarApp app = new SharedCalendarApp();
-        //initialize(fileScanner, app);
+
+        initialize(fileScanner, app);
+        fileScanner.close();
 
         handleInput(input, app);
-        //in.close();
         input.close();
     }
+
+
 
     private static void handleInput(Scanner input, SharedCalendarApp app){
 
         String command = input.next().trim();
-        input.nextLine();
 
         while(!command.equals(EXIT)){
             switch (command) {
@@ -53,7 +55,10 @@ public class Main {
                 case CANCEL -> handleCancel(input, app);
                 case SHOW -> handleShow(input, app);
                 case TOP -> handleTop(app);
-                default -> System.out.println(INVALID_COMMAND);
+                default ->{
+                    System.out.println(INVALID_COMMAND);
+                    input.nextLine();
+                }
             }
             command = input.next().trim();
         }
@@ -64,17 +69,41 @@ public class Main {
     private static void initialize(Scanner in, SharedCalendarApp app){
         int numberOfUsers = in.nextInt();
         in.nextLine();
+
+        String name;
+
         for(int i=0; i<numberOfUsers; i++){
-            handleCreate(in,app);
+            name = in.nextLine().trim();
+            app.addUser(name);
         }
+
         int numberOfEvents = in.nextInt();
+        in.nextLine();
+        String eventName;
+        int day;
+        int startHour;
+        int endHour;
+        int numOfParticipants;
+
         for(int i=0; i<numberOfEvents; i++){
-            handleSchedule(in,app);
+            eventName = in.next().trim();
+            day = in.nextInt();
+            startHour = in.nextInt();
+            endHour = in.nextInt();
+            in.nextLine();
+
+            numOfParticipants = in.nextInt();
+            in.nextLine();
+
+            String[] participants = readParticipants(in, numOfParticipants);
+            app.addEvent(eventName, day, startHour, endHour, numOfParticipants, participants[0]);
+            addEventToUsers(app, eventName, participants);
         }
     }
 
     private static void handleCreate(Scanner in, SharedCalendarApp app){
         String name = in.nextLine().trim();
+
         if(app.doesUserExist(name)){
             System.out.println(USER_ALREADY_REGISTERED);
         }else{
@@ -120,9 +149,11 @@ public class Main {
         boolean allRegistered = true;
         for (int i = 0; i < participants.length; i++) {
             if (!app.doesUserExist(participants[i])) {
-                System.out.println(NOT_REGISTERED);
                 allRegistered = false;
             }
+        }
+        if(!allRegistered){
+            System.out.println(NOT_REGISTERED);
         }
         return allRegistered;
     }
@@ -148,16 +179,14 @@ public class Main {
                                                      int day, int startHour, int endHour) {
 
         boolean canAdd = true;
-        boolean userUnavailablePrinted = false;
 
         for (int i = 0; i < participants.length; i++) {
             if (!app.isUserAvailable(participants[i], day, startHour, endHour)) {
-                if (!userUnavailablePrinted) {
-                    System.out.println(USER_NOT_AVAILABLE);
-                    userUnavailablePrinted = true;
-                }
                 canAdd = false;
             }
+        }
+        if(!canAdd){
+            System.out.println(USER_NOT_AVAILABLE);
         }
         return canAdd;
     }

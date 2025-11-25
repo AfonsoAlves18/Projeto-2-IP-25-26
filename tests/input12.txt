@@ -1,0 +1,32 @@
+cal_base.txt
+schedule AMonMorning 1 8 10
+2
+Xavier Alice
+schedule TeamSync 2 14 16
+3
+Alice Bob Unknown1
+schedule ThuAllHands 4 16 18
+4
+Dan Eve Unknown2 Unknown3
+schedule XavierOverlap 1 10 12
+2
+Xavier Alice
+schedule TeamSync 2 14 16
+2
+Alice Bob
+schedule ProjectReview 1 10 12
+2
+Alice Carol
+schedule Workshop 3 10 12
+2
+Eve Frank
+schedule NewOverlapSame 1 10 12
+2
+Alice Bob
+schedule NewOverlapTeam 2 14 16
+2
+Bob Alice
+schedule NewOverlapWed 3 10 12
+2
+Carol Dan
+exit

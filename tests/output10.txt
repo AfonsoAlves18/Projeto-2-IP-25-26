@@ -1,0 +1,13 @@
+User not registered.
+User not registered.
+Event not found in calendar of Alice.
+Event not found in calendar of Bob.
+Event not found in calendar of Eve.
+User Dan did not create event ProjectReview.
+Event successfully canceled.
+Event not found in calendar of Carol.
+User Bob did not create event AMonMid.
+Event successfully canceled.
+Event not found in calendar of Alice.
+User Judy did not create event ThuAllHands.
+Application exited.

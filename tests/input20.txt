@@ -1,0 +1,37 @@
+cal_user4.txt
+schedule Base 1 10 15
+1
+Alice
+schedule OverlapStart 1 8 11
+1
+Alice
+schedule OverlapEnd 1 14 17
+1
+Alice
+schedule OverlapMiddle 1 12 13
+1
+Alice
+schedule OverlapFull 1 9 16
+1
+Alice
+schedule OverlapExact 1 10 15
+1
+Alice
+schedule Before 1 8 10
+1
+Alice
+schedule After 1 15 17
+1
+Alice
+schedule Touch8to10 1 8 9
+1
+Bob
+schedule Base2 1 8 10
+1
+Bob
+schedule TouchBase 1 9 11
+1
+Bob
+show Alice
+show Bob
+exit

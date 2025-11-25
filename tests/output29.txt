@@ -1,0 +1,47 @@
+ThuAllHands, day 4, 16-18, 10 participants.
+AMonMorning, day 1, 8-10, 1 participants.
+AMonMid, day 1, 10-12, 2 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+TeamSync, day 2, 14-16, 4 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+TeamSync, day 2, 14-16, 4 participants.
+CWedMorning, day 3, 8-10, 1 participants.
+ProjectReview, day 3, 10-12, 3 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Event successfully canceled.
+AMonAfternoon, day 1, 14-16, 2 participants.
+TeamSync, day 2, 14-16, 4 participants.
+CWedMorning, day 3, 8-10, 1 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Event successfully created.
+AMonMorning, day 1, 8-10, 1 participants.
+AMonMid, day 1, 10-12, 2 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+TeamSync, day 2, 14-16, 4 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+ProjectReview, day 5, 10-12, 2 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+TeamSync, day 2, 14-16, 4 participants.
+CWedMorning, day 3, 8-10, 1 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Event successfully canceled.
+Event successfully canceled.
+Event successfully created.
+AMonMorning, day 1, 8-10, 1 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+NewTeamSync, day 2, 14-16, 4 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+ProjectReview, day 5, 10-12, 2 participants.
+BTueBlock, day 2, 9-12, 1 participants.
+NewTeamSync, day 2, 14-16, 4 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+ProjectReview, day 5, 10-12, 2 participants.
+AMonAfternoon, day 1, 14-16, 2 participants.
+NewTeamSync, day 2, 14-16, 4 participants.
+CWedMorning, day 3, 8-10, 1 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+NewTeamSync, day 2, 14-16, 4 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+ThuAllHands, day 4, 16-18, 10 participants.
+Application exited.

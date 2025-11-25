@@ -35,7 +35,7 @@ public class Calendar {
         for (int i = 0; i < this.size; i++) {
             Event event = this.calendar[i];
             if (event.getDay() == day) {
-                if (endHour > event.getStartHour() || startHour < event.getEndHour()) {
+                if (startHour < event.getEndHour()   &&   endHour > event.getStartHour()) {
                     return false;
                 }
             }
@@ -93,6 +93,7 @@ public class Calendar {
                 }
             }
         }
+        this.calendar = sortedEvents;
     }
 
     public Iterator getSortedIterator() {

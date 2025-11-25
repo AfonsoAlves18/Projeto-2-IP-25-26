@@ -1,0 +1,22 @@
+cal_base.txt
+top
+show Alice
+show Carol
+cancel ProjectReview Carol
+show Carol
+schedule ProjectReview 5 10 12
+2
+Alice Bob
+show Alice
+show Carol
+cancel AMonMid Alice
+cancel TeamSync Alice
+schedule NewTeamSync 2 14 16
+4
+Alice Bob Carol Dan
+show Alice
+show Bob
+show Carol
+show Dan
+top
+exit

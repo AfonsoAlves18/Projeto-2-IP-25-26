@@ -1,0 +1,8 @@
+cal_user1.txt
+create Alice
+create Bob
+create Carol
+create Alice
+create Bob
+create Dan
+exit

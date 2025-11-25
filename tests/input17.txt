@@ -1,0 +1,48 @@
+cal_base.txt
+create Kyle
+create Laura
+create Mia
+create Noah
+schedule NewMonCollab 1 12 14
+3
+Alice Bob Kyle
+schedule TueDesign 2 12 14
+3
+Bob Carol Laura
+schedule WedSync 3 17 19
+3
+Eve Frank Mia
+schedule FriMorning 5 8 10
+3
+Alice Dan Noah
+top
+schedule OverlapMid 1 10 12
+3
+Alice Kyle Laura
+schedule OverlapInvitee 1 10 12
+3
+Kyle Alice Bob
+schedule BusyTeamSlot 2 14 16
+3
+Grace Alice Bob
+top
+cancel ProjectReview Carol
+cancel TeamSync Alice
+schedule NewReview 3 10 12
+3
+Carol Dan Eve
+schedule RescheduledTeam 2 14 16
+4
+Alice Bob Carol Dan
+show Alice
+show Bob
+show Carol
+show Dan
+top
+cancel NewMonCollab Alice
+cancel NewReview Carol
+cancel ThuAllHands Alice
+show Alice
+show Grace
+top
+exit

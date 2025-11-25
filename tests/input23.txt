@@ -1,0 +1,33 @@
+cal_user4.txt
+schedule Event1 1 10 12
+4
+Alice Bob Carol Dan
+schedule Event2 2 10 12
+4
+Alice Bob Carol Dan
+schedule Event3 3 10 12
+4
+Alice Bob Carol Dan
+schedule Event4 4 10 12
+2
+Bob Alice
+show Alice
+show Bob
+show Carol
+cancel Event1 Bob
+cancel Event2 Carol
+cancel Event1 Alice
+show Alice
+show Bob
+show Carol
+cancel Event4 Alice
+cancel Event4 Bob
+show Alice
+show Bob
+cancel Event2 Alice
+cancel Event3 Alice
+show Alice
+show Bob
+show Carol
+show Dan
+exit

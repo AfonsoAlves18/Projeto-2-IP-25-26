@@ -1,0 +1,30 @@
+cal_user4.txt
+top
+schedule E1 1 10 12
+1
+Alice
+top
+show Alice
+schedule E2 2 10 12
+2
+Alice Bob
+top
+show Alice
+show Bob
+schedule E3 3 10 12
+3
+Alice Bob Carol
+top
+cancel E1 Alice
+top
+show Alice
+cancel E3 Alice
+top
+show Alice
+show Bob
+show Carol
+cancel E2 Alice
+top
+show Alice
+show Bob
+exit

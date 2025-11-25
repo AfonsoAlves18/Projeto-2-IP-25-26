@@ -1,0 +1,42 @@
+10
+Alice
+Bob
+Carol
+Dan
+Eve
+Frank
+Grace
+Heidi
+Ivan
+Judy
+10
+AMonMorning 1 8 10
+1
+Alice
+AMonMid 1 10 12
+2
+Alice Bob
+AMonAfternoon 1 14 16
+2
+Alice Carol
+BTueBlock 2 9 12
+1
+Bob
+TeamSync 2 14 16
+4
+Alice Bob Carol Dan
+CWedMorning 3 8 10
+1
+Carol
+ProjectReview 3 10 12
+3
+Carol Dan Eve
+Workshop 3 13 17
+2
+Eve Frank
+ThuAllHands 4 16 18
+10
+Alice Bob Carol Dan Eve Frank Grace Heidi Ivan Judy
+FriSupport 5 8 20
+2
+Grace Heidi

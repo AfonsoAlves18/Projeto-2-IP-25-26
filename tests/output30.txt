@@ -1,0 +1,97 @@
+Event075, day 4, 14-15, 10 participants.
+Event076, day 4, 15-16, 10 participants.
+Event049, day 5, 14-15, 10 participants.
+Event050, day 5, 15-16, 10 participants.
+Event001, day 1, 8-9, 1 participants.
+Event093, day 3, 8-12, 5 participants.
+Event070, day 4, 9-10, 7 participants.
+Event042, day 4, 18-20, 6 participants.
+Event100, day 2, 8-20, 8 participants.
+Event029, day 3, 12-13, 3 participants.
+Event075, day 4, 14-15, 10 participants.
+Event048, day 5, 13-14, 9 participants.
+Event093, day 3, 8-12, 5 participants.
+Event070, day 4, 9-10, 7 participants.
+Event042, day 4, 18-20, 6 participants.
+Proposer not available.
+Proposer not available.
+Proposer not available.
+Proposer not available.
+Proposer not available.
+Event successfully canceled.
+Event093, day 3, 8-12, 5 participants.
+Event070, day 4, 9-10, 7 participants.
+Event042, day 4, 18-20, 6 participants.
+Event successfully canceled.
+Event100, day 2, 8-20, 8 participants.
+Event064, day 3, 10-12, 4 participants.
+Event029, day 3, 12-13, 3 participants.
+Event076, day 4, 15-16, 10 participants.
+Event058, day 2, 10-12, 3 participants.
+Event030, day 3, 13-14, 3 participants.
+Event076, day 4, 15-16, 10 participants.
+Event032, day 3, 15-16, 3 participants.
+Event076, day 4, 15-16, 10 participants.
+Event successfully canceled.
+Event059, day 2, 12-14, 3 participants.
+Event064, day 3, 10-12, 4 participants.
+Event033, day 3, 16-17, 3 participants.
+Event077, day 4, 16-17, 1 participants.
+Event060, day 2, 14-16, 3 participants.
+Event036, day 3, 19-20, 3 participants.
+Event083, day 5, 12-14, 2 participants.
+Event successfully canceled.
+Event026, day 3, 9-10, 3 participants.
+Event098, day 5, 12-16, 7 participants.
+Event100, day 2, 8-20, 8 participants.
+Event029, day 3, 12-13, 3 participants.
+Event048, day 5, 13-14, 9 participants.
+Event successfully canceled.
+Event100, day 2, 8-20, 8 participants.
+Event064, day 3, 10-12, 4 participants.
+Event029, day 3, 12-13, 3 participants.
+Event032, day 3, 15-16, 3 participants.
+Event073, day 4, 12-13, 9 participants.
+Event074, day 4, 13-14, 9 participants.
+Event047, day 5, 12-13, 9 participants.
+Event048, day 5, 13-14, 9 participants.
+Event successfully created.
+Event successfully created.
+AfterCancel1, day 4, 14-15, 10 participants.
+AfterCancel2, day 4, 15-16, 10 participants.
+Event successfully canceled.
+Event successfully canceled.
+Event successfully canceled.
+Event successfully canceled.
+Event093, day 3, 8-12, 5 participants.
+Event071, day 4, 10-11, 8 participants.
+Event043, day 5, 8-9, 7 participants.
+Event027, day 3, 10-11, 3 participants.
+AfterCancel1, day 4, 14-15, 10 participants.
+Event048, day 5, 13-14, 9 participants.
+Event029, day 3, 12-13, 3 participants.
+AfterCancel1, day 4, 14-15, 10 participants.
+Event048, day 5, 13-14, 9 participants.
+Event092, day 2, 16-20, 4 participants.
+Event069, day 4, 8-9, 7 participants.
+AfterCancel1, day 4, 14-15, 10 participants.
+AfterCancel2, day 4, 15-16, 10 participants.
+Some user not available.
+Event093, day 3, 8-12, 5 participants.
+Event071, day 4, 10-11, 8 participants.
+Event043, day 5, 8-9, 7 participants.
+Event027, day 3, 10-11, 3 participants.
+AfterCancel1, day 4, 14-15, 10 participants.
+Event048, day 5, 13-14, 9 participants.
+Event not found in calendar of User001.
+Event successfully canceled.
+Event successfully canceled.
+Event003, day 1, 10-11, 1 participants.
+Event063, day 3, 8-10, 4 participants.
+Event018, day 2, 13-14, 2 participants.
+Event073, day 4, 12-13, 9 participants.
+Event019, day 2, 14-15, 2 participants.
+Event073, day 4, 12-13, 9 participants.
+AfterCancel1, day 4, 14-15, 10 participants.
+AfterCancel2, day 4, 15-16, 10 participants.
+Application exited.

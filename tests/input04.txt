@@ -1,0 +1,33 @@
+cal_user4.txt
+create Eve
+create Frank
+create Grace
+schedule TeamMeeting 1 9 11
+4
+Alice Bob Carol Dan
+schedule DesignReview 1 14 16
+3
+Alice Carol Eve
+schedule Planning 2 10 12
+3
+Bob Dan Eve
+schedule Standup 3 8 9
+3
+Alice Bob Carol
+schedule Workshop 3 15 18
+4
+Carol Dan Eve Frank
+schedule Retrospective 4 12 14
+3
+Alice Dan Frank
+schedule AllHands 5 16 20
+7
+Alice Bob Carol Dan Eve Frank Grace
+show Alice
+show Bob
+show Carol
+show Dan
+show Eve
+show Frank
+show Grace
+exit

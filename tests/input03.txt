@@ -1,0 +1,58 @@
+cal_user4.txt
+create Eve
+create Frank
+schedule AMonEarly 1 8 9
+1
+Alice
+schedule AMonMid 1 9 10
+1
+Alice
+schedule ATue 2 10 12
+1
+Alice
+schedule AThu 4 18 20
+1
+Alice
+schedule BMon 1 14 16
+1
+Bob
+schedule BWed 3 8 11
+1
+Bob
+schedule BFri 5 19 20
+1
+Bob
+schedule CTue 2 8 10
+1
+Carol
+schedule CThu 4 12 14
+1
+Carol
+schedule CFri 5 9 12
+1
+Carol
+schedule DMon 1 18 20
+1
+Dan
+schedule DWed1 3 12 13
+1
+Dan
+schedule DWed2 3 13 15
+1
+Dan
+schedule ETue 2 16 18
+1
+Eve
+schedule EFri 5 10 11
+1
+Eve
+schedule FWed 3 16 19
+1
+Frank
+show Alice
+show Bob
+show Carol
+show Dan
+show Eve
+show Frank
+exit

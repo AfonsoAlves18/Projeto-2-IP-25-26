@@ -1,0 +1,14 @@
+cal_base.txt
+cancel AMonMid Xavier
+cancel NonExistingEvent Yara
+cancel NonExistingEvent Alice
+cancel AMonMorning Bob
+cancel TeamSync Eve
+cancel ProjectReview Dan
+cancel ProjectReview Carol
+cancel ProjectReview Carol
+cancel AMonMid Bob
+cancel AMonMid Alice
+cancel AMonMid Alice
+cancel ThuAllHands Judy
+exit

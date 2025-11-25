@@ -1,0 +1,26 @@
+cal_base.txt
+show Alice
+cancel AMonMorning Alice
+cancel AMonMid Alice
+cancel AMonAfternoon Alice
+schedule NewMonBlock 1 8 16
+1
+Alice
+show Alice
+cancel TeamSync Alice
+schedule NewTueSync 2 14 16
+2
+Alice Bob
+show Alice
+cancel ProjectReview Carol
+schedule NewWedReview 3 10 12
+3
+Carol Dan Eve
+show Carol
+cancel ThuAllHands Alice
+top
+schedule ThursRevival 4 16 18
+10
+Alice Bob Carol Dan Eve Frank Grace Heidi Ivan Judy
+top
+exit

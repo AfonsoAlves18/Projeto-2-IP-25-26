@@ -1,0 +1,5 @@
+User successfully created.
+User successfully created.
+User successfully created.
+User successfully created.
+Application exited.

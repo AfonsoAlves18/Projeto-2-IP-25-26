@@ -1,0 +1,23 @@
+cal_user100.txt
+schedule MaxParticipants 1 10 12
+10
+User001 User002 User003 User004 User005 User006 User007 User008 User009 User010
+schedule MinDuration 2 8 9
+2
+User011 User012
+schedule MaxDuration 3 8 20
+2
+User013 User014
+schedule BoundaryEarly 4 8 10
+1
+User015
+schedule BoundaryLate 5 18 20
+1
+User016
+show User001
+show User011
+show User013
+show User015
+show User016
+top
+exit
